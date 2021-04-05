@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         NotificationCenter.default.addObserver(self, selector:  #selector(self.vkitSignedIn), name: .VKAccountStateChanged, object: nil)
         
-        // 1. Retrieve session token, check docs on https://docs.video.io/docs/ios/session for more information
+        // 1. Retrieve session token, check docs on https://docs.video.io/ios/session for more information
         // ...
         struct SessionResponse: Decodable {
             var sessionToken: String
